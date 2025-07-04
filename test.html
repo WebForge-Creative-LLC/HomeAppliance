@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS/JS Test - AquaFlow Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" style="padding: 50px 20px; text-align: center;">
+        <h1 style="color: #2563eb; margin-bottom: 20px;">CSS and JavaScript Test</h1>
+        <p style="font-size: 18px; margin-bottom: 30px;">If you can see this styled text and the button below works, then CSS and JS are loading correctly!</p>
+        
+        <button id="testButton" class="btn-primary btn-modern" style="margin: 20px;">
+            <span>Test JavaScript</span>
+            <i class="fas fa-check"></i>
+            <div class="btn-glow"></div>
+        </button>
+        
+        <div id="testResult" style="margin-top: 30px; padding: 20px; background: #f3f4f6; border-radius: 8px; display: none;">
+            <h3 style="color: #059669;">✅ Success!</h3>
+            <p>JavaScript is working correctly. Your site is ready for GitHub Pages!</p>
+        </div>
+        
+        <div style="margin-top: 50px;">
+            <a href="index.html" class="btn-primary btn-modern">
+                <span>Go to Homepage</span>
+                <i class="fas fa-home"></i>
+                <div class="btn-glow"></div>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Test JavaScript functionality
+        document.getElementById('testButton').addEventListener('click', function() {
+            document.getElementById('testResult').style.display = 'block';
+            this.innerHTML = '<span>JavaScript Working!</span><i class="fas fa-check"></i><div class="btn-glow"></div>';
+        });
+    </script>
+</body>
+</html> 
